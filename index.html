@@ -1,17 +1,948 @@
-<!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="es" class="translated-ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Udemy</title>
-    <link href="estilos.css" rel="stylesheet"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Namso ccgen BamBros</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="BIN Generator tool, new upgraded version instantly Generates valid random credit card numbers &amp; details like CCV."
+    />
+    <meta name="theme-color" content="#5A8DEE" />
+    <meta name="msapplication-navbutton-color" content="#5A8DEE" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5A8DEE" />
+    <link
+      rel="shortcut icon"
+      href="https://1.bp.blogspot.com/-8nbQAzGJ33M/YPVe6AGpiZI/AAAAAAAAANo/u0NnYc2wgZIB8sMmOhvCTGrDen-QpVvEQCLcBGAsYHQ/s1925/namsogen.png"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="image"
+      content="https://1.bp.blogspot.com/-8nbQAzGJ33M/YPVe6AGpiZI/AAAAAAAAANw/1IqZJHmR9TMJOSULEVaa04uqYNYzvivlwCPcBGAYYCw/s16000/namsogen.png"
+    />
+    <meta
+      itemprop="name"
+      content="BIN Generator CC - free fast random valid cards online tool."
+    />
+    <meta
+      itemprop="description"
+      content="Namsogen CC Pro - Free Fast Credit Cards Generator online tool,BIN Generator tool, new upgraded version instantly Generates valid random credit card numbers &amp; details like CCV."
+    />
+    <meta
+      itemprop="image"
+      content="https://1.bp.blogspot.com/-8nbQAzGJ33M/YPVe6AGpiZI/AAAAAAAAANw/1IqZJHmR9TMJOSULEVaa04uqYNYzvivlwCPcBGAYYCw/s16000/namsogen.png"
+    />
+    <meta
+      name="twitter:card"
+      content="BIN Generator tool, new upgraded version instantly Generates valid random credit card numbers &amp; details like CCV."
+    />
+    <meta
+      name="twitter:title"
+      content="BIN Generator CC - free fast random valid cards online tool."
+    />
+    <meta
+      name="twitter:description"
+      content="BIN Generator tool, new upgraded version instantly Generates valid random credit card numbers &amp; details like CCV."
+    />
+    <meta name="twitter:site" content="@DailyBins01" />
+    <meta name="twitter:creator" content="@DailyBins01" />
+    <meta
+      name="twitter:image:src"
+      content="https://1.bp.blogspot.com/-8nbQAzGJ33M/YPVe6AGpiZI/AAAAAAAAANo/u0NnYc2wgZIB8sMmOhvCTGrDen-QpVvEQCLcBGAsYHQ/s1925/namsogen.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="BIN Generator CC - free fast random valid cards online tool."
+    />
+    <meta
+      name="og:title"
+      content="BIN Generator CC - free fast random valid cards online tool."
+    />
+    <meta
+      name="og:description"
+      content="BIN Generator tool, new upgraded version instantly Generates valid random credit card numbers &amp; details like CCV."
+    />
+    <meta
+      name="og:image"
+      content="https://1.bp.blogspot.com/-8nbQAzGJ33M/YPVe6AGpiZI/AAAAAAAAANw/1IqZJHmR9TMJOSULEVaa04uqYNYzvivlwCPcBGAYYCw/s16000/namsogen.png"
+    />
+    <meta name="og:type" content="website" />
+    <meta name="og:site_name" content="Credit Card Generator" />
+    <link
+      rel="stylesheet"
+      href="https:///cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <style>
+      :root {
+        --c1: #fbb1bd;
+        --c2: #2dc653;
+        --c3: #0c0f0a;
+      }
+      .bg-1 {
+        background-color: #6500a3;
+      }
+      .bg-2 {
+        background-color: var(--c2) !important;
+      }
+      .bg-3 {
+        background-color: var(--c3);
+      }
+      .bg-4 {
+        background-color: #e9ecef;
+      }
+      .text-1 {
+        color: #2464b2;
+      }
+      .text-2 {
+        color: var(--c2);
+      }
+      .text-3 {
+        color: var(--c3);
+      }
+      .shadow-btn {
+        box-shadow: 10px 10px 8px rgb(205, 205, 224);
+      }
+      a.nav-link:hover:before {
+        content: "[";
+        font-weight: 700;
+      }
+      a.nav-link:hover:after {
+        content: "]";
+        font-weight: 700;
+      }
+      .target-div :hover {
+        cursor: pointer;
+        opacity: 0.1;
+      }
+      .target-div img {
+        max-width: 100%;
+        height: 5rem;
+      }
+      .backtotop {
+        color: var(--white);
+        opacity: 0.6;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        padding-top: 5px;
+        -webkit-border-radius: 20%;
+        -moz-border-radius: 20%;
+        border-radius: 20%;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      .backtotop:hover {
+        color: var(--white);
+        opacity: 1;
+        padding-top: 0;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      .single-chart {
+        justify-content: space-around;
+      }
+      .circular-chart {
+        display: block;
+        margin: 1em auto;
+        max-width: 80%;
+        max-height: 10em;
+      }
+      .circle-bg {
+        fill: none;
+        stroke: #eee;
+        stroke-width: 3.8;
+      }
+      .circle {
+        fill: none;
+        stroke-width: 2.8;
+        stroke-linecap: round;
+      }
+      .circular-chart.orange .circle {
+        stroke: #ff9f00;
+      }
+      .circular-chart.green .circle {
+        stroke: #4cc790;
+      }
+      .circular-chart.blue .circle {
+        stroke: #3c9ee5;
+      }
+      .percentage {
+        fill: #666;
+        font-family: sans-serif;
+        font-size: 0.5em;
+        text-anchor: middle;
+      }
+      div#navbarNavDropdown {
+        font-size: medium;
+        font-family: revert;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: rgb(255 255 255);
+      }
+
+      @media only screen and (max-width: 975px) {
+        /* For tablets: */
+        .ads-under {
+          display: none;
+        }
+      }
+    </style>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      charset="UTF-8"
+      href="https://translate.googleapis.com/translate_static/css/translateelement.css"
+    />
+    <meta
+      name="chromesniffer"
+      id="chromesniffer_meta"
+      content='{"jQuery":"3.4.1","SPDY":-1,"Bootstrap":-1}'
+    />
+    <script
+      type="text/javascript"
+      src="chrome-extension://fhhdlnnepfjhlhilgmeepgkhjmhhhjkh/js/detector.js"
+    ></script>
   </head>
-  <body>
-      <h1>Universidad HTML</h1>
-      <br/>
-      <a href="Pagina1.html" target="">Ir al contenido</a>
-      <br/>
-      <a href="https://www.youtube.com/">YouTube</a>
-  </body>
-</html>
+  <body onload="ccgen();" class="bg-3 text-2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-1 sticky-top">
+      <a class="navbar-brand" href="#">
+        <img
+          src="uwp1447353.png"
+          alt="Namsogen v6"
+          style="height: 1.6em"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Navegación de palanca"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              title="Contenedores diarios"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >BIN</font
+                ></font
+              ></a
+            >
+          </li>
+          <li class="nav-link d-none d-lg-block d-xl-block"></li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              title="Cuentas Premium - Herramienta gratuita"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Cuentas Premium off</font
+                ></font
+              ></a
+            >
+          </li>
+          <li class="nav-link d-none d-lg-block d-xl-block"></li>
+          <a
+            class="nav-link"
+            href="#"
+            title="Contáctenos"
+            ><font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit">Contáctenos off</font></font
+            ></a
+          >
+
+          <li class="nav-link d-none d-lg-block d-xl-block"></li>
+          <li class="nav-link d-none d-lg-block d-xl-block"></li>
+          <a
+            class="nav-link"
+            href="#"
+            title="Política de privacidad"
+            ><font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit"
+                >Política de privacidad off</font
+              ></font
+            ></a
+          >
+
+          <li class="nav-link d-none d-lg-block d-xl-block"></li>
+          <li class="nav-link d-none d-lg-block d-xl-block"></li>
+          <a
+            class="nav-link"
+            href="#"
+            title="Sobre nosotros"
+            ><font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit">Sobre nosotros off</font></font
+            ></a
+          >
+
+          <li class="nav-link d-none d-lg-block d-xl-block"></li>
+        </ul>
+        <div class="ml-auto">
+          <hr class="d-lg-none d-xl-none" />
+          <a
+            href="https://t.me/Parametrobins"
+            title="Canal de Telegram"
+            class="btn btn-outline-light"
+            ><i class="far fa-paper-plane"></i
+            ><font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit">Telegram-Bins</font></font
+            ></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <!-- Adsens -->
+
+    <script
+      async=""
+      src="#"
+    ></script>
+    <ins
+      class="adsbygoogle"
+      style="display: block; text-align: center"
+      data-ad-layout="in-article"
+      data-ad-format="fluid"
+      data-ad-client="ca-pub-1030698219833920"
+      data-ad-slot="8269445445"
+    ></ins>
+    
+    <!-- Adsens -->
+    <main onload="ccgen();" class="container-fluid text-center my-5">
+      <div class="row">
+        <div class="col-md-6 pt-2">
+          <form name="console" id="console">
+            <input type="hidden" name="tr" value="1000" />
+            <input type="hidden" name="L" value="1L" />
+            <select name="ccnsp" class="input_text" style="display: none">
+              <option selected="selected">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Ninguno</font></font
+                >
+              </option>
+            </select>
+
+            <div class="input-group shadow-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"
+                      >BIN</font
+                    ></font
+                  ></span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="ccpN"
+                name="ccp"
+                value=""
+                placeholder="51546200xxxxxxxxxx"
+                maxlength="19"
+              />
+            </div>
+
+            <div class="input-group shadow-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" style="color: red;
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">CCV2</font></font
+                  ></span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="eccv"
+                maxlength="6"
+                value="Rnd"
+                placeholder="Rnd"
+              />
+              <div class="input-group-prepend input-group-append">
+                <span class="input-group-text" style="color: red;
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">Mes</font></font
+                  ></span
+                >
+              </div>
+              <select name="emeses" class="form-control">
+                <option value="rnd">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">RND</font></font
+                  >
+                </option>
+                <option value="01">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">01</font></font
+                  >
+                </option>
+                <option value="02">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">02</font></font
+                  >
+                </option>
+                <option value="03">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">03</font></font
+                  >
+                </option>
+                <option value="04">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">04</font></font
+                  >
+                </option>
+                <option value="05">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">05</font></font
+                  >
+                </option>
+                <option value="06">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">06</font></font
+                  >
+                </option>
+                <option value="07">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">07</font></font
+                  >
+                </option>
+                <option value="08">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">08</font></font
+                  >
+                </option>
+                <option value="09">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">09</font></font
+                  >
+                </option>
+                <option value="10">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">10</font></font
+                  >
+                </option>
+                <option value="11">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">11</font></font
+                  >
+                </option>
+                <option value="12">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">12</font></font
+                  >
+                </option>
+              </select>
+              <div class="input-group-prepend input-group-append">
+                <span class="input-group-text" 
+                  ><font style="vertical-align: inherit" 
+                    ><font style="vertical-align: inherit">Año</font></font
+                  ></span
+                >
+              </div>
+              <select name="eyear" class="form-control">
+                <option value="rnd">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">RND</font></font
+                  >
+                </option>
+                <option value="2020">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2020</font></font
+                  >
+                </option>
+                <option value="2021">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2021</font></font
+                  >
+                </option>
+                <option value="2022">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2022</font></font
+                  >
+                </option>
+                <option value="2023">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2023</font></font
+                  >
+                </option>
+                <option value="2024">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2024</font></font
+                  >
+                </option>
+                <option value="2025">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2025</font></font
+                  >
+                </option>
+                <option value="2026">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2026</font></font
+                  >
+                </option>
+                <option value="2027">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2027</font></font
+                  >
+                </option>
+                <option value="2028">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2028</font></font
+                  >
+                </option>
+                <option value="2029">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2029</font></font
+                  >
+                </option>
+                <option value="2030">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2030</font></font
+                  >
+                </option>
+                <option value="2031">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2031</font></font
+                    >
+                </option>
+                <option value="2032">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">2032</font></font
+                    >
+                </option>
+              </select>
+            </div>
+
+            <div class="input-group shadow-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">Incluir</font></font
+                  ></span
+                >
+              </div>
+              <div class="form-control custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="ccexpdat"
+                  name="ccexpdat"
+                  checked=""
+                />
+                <label class="custom-control-label" for="ccexpdat"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">Fecha</font></font
+                  ></label
+                >
+              </div>
+              <div class="form-control custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="ccvi"
+                  name="ccvi"
+                  checked=""
+                />
+                <label class="custom-control-label" for="ccvi"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">CCV2</font></font
+                  ></label
+                >
+              </div>
+              <div class="form-control custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="ccbank"
+                  name="ccbank"
+                />
+                <label class="custom-control-label" for="ccbank"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"
+                      >Información bancaria</font
+                    ></font
+                  ></label
+                >
+              </div>
+            </div>
+
+            <div class="input-group shadow-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">Monto</font></font
+                  ></span
+                >
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                name="ccghm"
+                maxlength="4"
+                value="10"
+                placeholder="Ingrese la cantidad"
+              />
+              <div class="input-group-append input-group-prepend">
+                <span class="input-group-text"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">Formato</font></font
+                  ></span
+                >
+              </div>
+              <select class="form-control" name="ccoudatfmt">
+                <option value="CHECKER">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">CHK</font></font
+                  >
+                </option>
+                <option value="CSV">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">CSV</font></font
+                  >
+                </option>
+                <option value="XML">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">XML</font></font
+                  >
+                </option>
+                <option value="JSON">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">JSON</font></font
+                  >
+                </option>
+                <option value="URL">
+                  <font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">URL</font></font
+                  >
+                </option>
+              </select>
+              <div class="input-group-append">
+                <a name="gerar" id="gerar" class="btn btn-outline-secondary">
+                  <i class="fa fa-cogs"></i
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">
+                      BamBimno-Gener
+                    </font></font
+                  ></a
+                >
+              </div>
+            </div>
+            <div class="ads-under">
+              <!-- Adsens -->
+
+              <script
+                async=""
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+              ></script>
+              <ins
+                class="adsbygoogle"
+                style="display: block; text-align: center"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-1030698219833920"
+                data-ad-slot="5696442365"
+              ></ins>
+              <!-- Adsens -->
+            </div>
+            <hr />
+
+            <div class="form-group shadow-sm">
+              <textarea
+                class="form-control"
+                rows="11"
+                name="output2"
+                id="output2"
+              ></textarea>
+            </div>
+          </form>
+
+          <div class="col-md-12 p-0">
+            <div class="alert alert-primary" role="alert">
+              <i class="fas fa-check-circle"></i
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">
+                  Puede encontrar Nuestro BIN en el canal de Telegram <br>
+                  PARAMETROS-BINS.
+                </font></font
+              >
+            </div>
+          </div>
+
+          <div class="col-md-12 p-0"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-white rounded shadow-sm p-3">
+            <img
+              src="photo_2021-09-03_10-30-49.jpg"
+              style="height: 8rem"
+              alt="Herramienta generadora BIN CCV"
+            />
+            <h1>
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Parametros-Bins</font
+                ></font
+              >
+            </h1>
+            <h2 style="font-size: 1rem">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >BIN CC Generator: herramienta en línea rápida y gratuita de
+                  tarjetas válidas aleatorias: Modificado por BamBimno.</font
+                ></font
+              >
+            </h2>
+            <p>
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">
+                  Namsogen v6 es una herramienta de generación de contenedores
+                  que genera detalles válidos de tarjetas de crédito y códigos
+                  BIN con todos los detalles, como nombre, dirección, fecha de
+                  vencimiento y código CVV. </font
+                ><font style="vertical-align: inherit"
+                  >Te permite generar los datos de las tarjetas de crédito de
+                  las marcas más populares del mercado. </font
+                ><font style="vertical-align: inherit"
+                  >Los detalles generados se amplían con un algoritmo operativo
+                  que se adapta a todas las regulaciones crediticias reales.
+                </font></font
+              ><a href="#"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Contenedores diarios</font
+                  ></font
+                ></a
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">
+                  Puede utilizarlos para pruebas de seguridad y con fines
+                  educativos.
+                </font></font
+              >
+            </p>
+
+            <!--Adsnes-->
+
+            <script
+              async="#"
+              src="#"
+            ></script>
+            <!-- cc02 -->
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-1030698219833920"
+              data-ad-slot="4574932386"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
+           
+            <!--Adsnes-->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="container">
+      <div class="row p-5">
+        <div class="col-md-6 text-center">
+          <div class="ads-under2">
+            <!-- Adsens -->
+
+            <script
+              async="#"
+              src="#"
+            ></script>
+            <ins
+              class="adsbygoogle"
+              style="display: block; text-align: center"
+              data-ad-layout="in-article"
+              data-ad-format="fluid"
+              data-ad-client="ca-pub-1030698219833920"
+              data-ad-slot="8269445445"
+            ></ins>
+
+          </div>
+          <!-- Adsens -->
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h3>
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >El mejor generador y verificador de tarjetas de crédito
+                  gratis 2030</font
+                ></font
+              >
+            </h3>
+            <p>
+              <b
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Namso Generator: herramienta en línea gratuita Fast Credit
+                    Cards Generator</font
+                  ></font
+                ></b
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">
+                  Permítame explicarle un poco sobre el proyecto namso ccgen.
+                  Mis desarrolladores y yo pasamos meses para desarrollar un
+                  generador de tarjetas de crédito para usted. Con nuestro ccgen
+                  puede generar números de tarjetas de crédito ilimitados. </font
+                ><font style="vertical-align: inherit"
+                  >¡Por supuesto, ahora ves esto! "También puede usar nuestro
+                  generador de números de tarjetas de crédito Visa, generador de
+                  números de tarjetas maestras, generador de números de tarjetas
+                  de crédito amex e incluso generador de tarjetas Discover. Este
+                  servicio se llama validador de tarjetas de crédito para
+                  verificar los números de tarjetas de crédito y débito
+                  generados validez."
+                </font></font
+              ><a
+                href="#"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Telgram: Parametros-Bins</font
+                  ></font
+                ></a
+              >
+            </p>
+            <h3>
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Qué puedo hacer con esta tarjeta de crédito</font
+                ></font
+              >
+            </h3>
+            <p>
+              <b
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Puede utilizar Namsogen v6 con fines educativos y de
+                    verificación.
+                  </font></font
+                ></b
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Es posible que estas tarjetas generadas no funcionen como los
+                  números de tarjetas de crédito que funcionan en línea. </font
+                ><font style="vertical-align: inherit"
+                  >Por lo tanto, debe elegir sabiamente dónde usar ".
+                </font></font
+              >
+            </p>
+            <a
+              href="#"
+              title="Namsogen Acerca de nosotros"
+              class="btn btn-lg btn-outline-primary mb-2"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Sobre Quienes Somos</font
+                ></font
+              ></a
+            >
+            <a
+              href="#"
+              title="Política de privacidad de Namsogen"
+              class="btn btn-lg btn-outline-primary mb-2"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Política de privacidad off </font
+                ></font
+              ></a
+            >
+            <a
+              href="#"
+              title="Namsogen Contáctenos"
+              class="btn btn-lg btn-outline-primary mb-2"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Contáctenos off</font></font
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid bg-white p-5 text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <a
+            class="list-inline-item btn btn-primary text-white mb-2"
+            href="#"
+            title="Twitter de papeleras diarias"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="list-inline-item btn btn-primary text-white mb-2"
+            href="#"
+            title="Contenedores diarios Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="list-inline-item btn btn-primary text-white mb-2"
+            href="https://t.me/Parametrobins"
+            title="Telegrama de contenedores diarios"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-telegram-plane"></i
+          ></a>
+          <a
+            class="list-inline-item btn btn-primary text-white mb-2"
+            href="#"
+            title="Contenedores diarios de Youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <div class="col-md-6">
+          <font style="vertical-align: inherit"
+            ><font style="vertical-align: inherit"
+              >2030 Todos los derechos de autor reservados © Namsogen BamBros | </font
+            ><font style="vertical-align: inherit">Parametros-Bins</font></font
+          >
+        </div>
+    </footer>
+
+    <script src="https:///cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https:///cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha256-/ijcOLwFf26xEYAjW75FizKVo5tnTYiQddPZoLUHHZ8=" crossorigin="anonymous"></script>
+        <script src="https:///cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+        <script defer="" src="https://gist.githack.com/rwael2k12/45342fcf5418fb55ab7ffa27a5d1ead6/raw/eb7daaff21fbb4ffc5fa117e9fc18e71a19d4a78/script.js"></script>
+            <script defer="" src="https://gist.githack.com/rwael2k12/f3abf3ea9528e6831928c2b50a01b2f4/raw/4ee3e018de26eb8d7f619bc6b335797cd774c6b0/bin_generator.js"></script>
+    </body>
+    </html>
+    
+   
